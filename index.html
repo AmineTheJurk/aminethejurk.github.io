@@ -74,13 +74,16 @@
             border-radius: 6px;
             border: 1px solid #30363d;
         }
-        /* Masquage initial de la langue anglaise */
+        .btn-link:hover {
+            background-color: #30363d;
+            color: #58a6ff;
+        }
         .en { display: none; }
     </style>
 </head>
 <body>
 
-    <!-- SÉLECTEUR DE LANGUE -->
+    <!-- BOUTONS LANGUE -->
     <div class="lang-switch">
         <button id="b-fr" class="lang-btn active" onclick="changement('fr')">Français</button>
         <span style="color: #30363d;">|</span>
@@ -104,8 +107,8 @@
             </div>
             <div class="project-desc fr">Un remake open-source complet de Flappy Bird développé en 8 heures de travail intensif. Basé sur des assets libres (CC0). Attention, l'exécution peut dépendre de la génération de votre GPU !</div>
             <div class="project-desc en">A complete open-source remake of Flappy Bird made in 8 hours. Based on CC0 assets. Warning: compatibility issues may happen on newer phone or PC GPUs since it is still in beta.</div>
-            <a href="https://github.com" target="_blank" class="btn-link fr">Voir sur GitHub</a>
-            <a href="https://github.com" target="_blank" class="btn-link en">View on GitHub</a>
+            <a href="https://github.com/AmineTheJurk/Flappy_Re-Bird" target="_blank" class="btn-link fr">Voir sur GitHub</a>
+            <a href="https://github.com/AmineTheJurk/Flappy_Re-Bird" target="_blank" class="btn-link en">View on GitHub</a>
         </div>
 
         <!-- SNAKE++ -->
@@ -117,8 +120,8 @@
             </div>
             <div class="project-desc fr">Une version moderne et avancée du grand classique Snake. Développé en C++ pour un rendu graphique ultra-performant sous Windows et Android via l'interface native JNI. Connecté à Firebase pour les classements en ligne.</div>
             <div class="project-desc en">An advanced, modern take on the classic Snake game. Built with C++ for high-performance rendering (OpenGL) and Java for Android integration (JNI). Features online leaderboards using Firebase.</div>
-            <a href="https://github.com" target="_blank" class="btn-link fr">Voir sur GitHub</a>
-            <a href="https://github.com" target="_blank" class="btn-link en">View on GitHub</a>
+            <a href="https://github.com/AmineTheJurk/SnakePlusPlus" target="_blank" class="btn-link fr">Voir sur GitHub</a>
+            <a href="https://github.com/AmineTheJurk/SnakePlusPlus" target="_blank" class="btn-link en">View on GitHub</a>
         </div>
 
         <!-- WEBBIK BROWSER -->
@@ -130,8 +133,8 @@
             </div>
             <div class="project-desc fr">Mon tout premier projet d'application de navigation web pour l'écosystème Android. Le projet a été interrompu suite à une perte de sauvegarde lors d'une migration de système d'exploitation.</div>
             <div class="project-desc en">A simple web browser and my first Android project. Discontinued because I forgot to backup my Android Studio files before reinstalling my OS.</div>
-            <a href="https://github.com" target="_blank" class="btn-link fr">Voir sur GitHub</a>
-            <a href="https://github.com" target="_blank" class="btn-link en">View on GitHub</a>
+            <a href="https://github.com/AmineTheJurk/WebBik-Browser" target="_blank" class="btn-link fr">Voir sur GitHub</a>
+            <a href="https://github.com/AmineTheJurk/WebBik-Browser" target="_blank" class="btn-link en">View on GitHub</a>
         </div>
 
         <!-- DOSMII -->
@@ -143,8 +146,8 @@
             </div>
             <div class="project-desc fr">Une application dédiée à la Nintendo Wii (Homebrew Channel) permettant de faire tourner l'émulateur DOSBox directement sur la console. Nécessite l'utilisation d'un clavier PC physique externe pour la saisie des commandes.</div>
             <div class="project-desc en">A DOSBox emulator port for the Nintendo Wii Homebrew Channel. It does not have a virtual keyboard, so you need a physical USB PC keyboard plugged into the Wii to type and play.</div>
-            <a href="https://github.com" target="_blank" class="btn-link fr">Voir sur GitHub</a>
-            <a href="https://github.com" target="_blank" class="btn-link en">View on GitHub</a>
+            <a href="https://github.com/AmineTheJurk/DosMii" target="_blank" class="btn-link fr">Voir sur GitHub</a>
+            <a href="https://github.com/AmineTheJurk/DosMii" target="_blank" class="btn-link en">View on GitHub</a>
         </div>
 
         <!-- CLOCKX -->
@@ -156,13 +159,13 @@
             </div>
             <div class="project-desc fr">Une application légère au format HTML affichant l'heure et la date avec une prise en charge ciblée sur 8 fuseaux horaires distincts à travers le monde.</div>
             <div class="project-desc en">A simple HTML app that tells you the current date and time. It features a limited access system with support for exactly 8 different world timezones.</div>
-            <a href="https://github.com" target="_blank" class="btn-link fr">Voir sur GitHub</a>
-            <a href="https://github.com" target="_blank" class="btn-link en">View on GitHub</a>
+            <a href="https://github.com/AmineTheJurk/ClockX" target="_blank" class="btn-link fr">Voir sur GitHub</a>
+            <a href="https://github.com/AmineTheJurk/ClockX" target="_blank" class="btn-link en">View on GitHub</a>
         </div>
 
     </div>
 
-    <!-- SCRIPT DE CHANGEMENT DE LANGUE ULTRA SIMPLIFIÉ -->
+    <!-- SCRIPT DE CHANGEMENT DE LANGUE -->
     <script>
         function changement(l) {
             document.querySelectorAll('.en').forEach(e => e.style.display = (l === 'en') ? 'block' : 'none');
